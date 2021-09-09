@@ -23,7 +23,6 @@ namespace NutritionixLib.Models
             int nfProtein,
             object nfPotassium,
             object nfP,
-            List<FullNutrient> fullNutrients,
             string nixBrandName,
             string nixBrandId,
             string nixItemName,
@@ -52,7 +51,6 @@ namespace NutritionixLib.Models
             this.NfProtein = nfProtein;
             this.NfPotassium = nfPotassium;
             this.NfP = nfP;
-            this.FullNutrients = fullNutrients;
             this.NixBrandName = nixBrandName;
             this.NixBrandId = nixBrandId;
             this.NixItemName = nixItemName;
