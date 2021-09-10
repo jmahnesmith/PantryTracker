@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NutritionixLib", "Nutrition
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NutritionixLib.Tests", "NutritionixLib.Tests\NutritionixLib.Tests.csproj", "{C8D2A309-7139-447B-8E5F-D8518AE35EEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PantryDBLibrary", "PantryDBLibrary\PantryDBLibrary.csproj", "{A3E03186-C9F0-42DB-876C-037F4502A466}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{C8D2A309-7139-447B-8E5F-D8518AE35EEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D2A309-7139-447B-8E5F-D8518AE35EEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D2A309-7139-447B-8E5F-D8518AE35EEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E03186-C9F0-42DB-876C-037F4502A466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E03186-C9F0-42DB-876C-037F4502A466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E03186-C9F0-42DB-876C-037F4502A466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E03186-C9F0-42DB-876C-037F4502A466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

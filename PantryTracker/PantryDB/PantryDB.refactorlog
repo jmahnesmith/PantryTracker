@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="eef0903e-2554-49ea-bcee-735ba424c58d" ChangeDateTime="09/10/2021 20:18:42">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nix_item_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="item_name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e0bd8192-40d4-43b4-937c-75b8fe1c201d" ChangeDateTime="09/10/2021 20:19:06">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nix_brand_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="brand_name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0fff0f6c-9a35-41a2-b876-dd59b3801ef3" ChangeDateTime="09/10/2021 20:19:17">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_potassium]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="potassium" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="52c6e94e-6426-4f03-8725-dbcf24e71874" ChangeDateTime="09/10/2021 20:19:19">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_protein]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="protein" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b8dd2ca9-9d63-4292-8b5e-5357d60c1bc5" ChangeDateTime="09/10/2021 20:19:21">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_sugars]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="sugars" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2c7a4be4-e220-48d7-a0a3-b2206c9de30e" ChangeDateTime="09/10/2021 20:19:23">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_dietary_fiber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="dietary_fiber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b9403dde-8e49-44a2-b97a-cc04b1eb928d" ChangeDateTime="09/10/2021 20:19:25">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_total_carbohydrate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="total_carbohydrate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a95a07fe-4f95-4c09-a846-f21248e5e984" ChangeDateTime="09/10/2021 20:19:28">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_sodium]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="sodium" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e60ceacb-d544-46e8-897b-481238667c45" ChangeDateTime="09/10/2021 20:19:32">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_cholesterol]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="cholesterol" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ac73ab34-b158-4664-89c1-74e7e99a6ee9" ChangeDateTime="09/10/2021 20:19:34">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_saturated_fat]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="saturated_fat" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="159d9dd3-69cc-4a06-901a-cd52262b36fd" ChangeDateTime="09/10/2021 20:19:35">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_total_fat]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="total_fat" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="646d97ca-0d4c-442b-86fe-a51a49a6be39" ChangeDateTime="09/10/2021 20:19:55">
+    <Property Name="ElementName" Value="[dbo].[Foods].[nf_calories]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Foods]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="calories" />
+  </Operation>
+</Operations>

@@ -5,6 +5,7 @@ using System.Net.Http;
 using NutritionixLib.Models;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using static NutritionixLib.Models.Foods;
 
 namespace NutritionixLib.DataTunnel
 {
@@ -14,7 +15,7 @@ namespace NutritionixLib.DataTunnel
 
         private string itemURL = "https://trackapi.nutritionix.com/v2/search/item?upc=";
 
-        public async Task<Foods> GetFood(string upc)
+        public async Task<Food> GetFood(string upc)
         {
             // Set up headers
             httpClient.DefaultRequestHeaders.Add("x-app-id", "1869a2db");
@@ -31,7 +32,7 @@ namespace NutritionixLib.DataTunnel
             // Deserialize Object
             var food = JsonConvert.DeserializeObject<Foods>(await response.Content.ReadAsStringAsync());
 
-            return food;
+            return food.foods[0];
         }
     }
 }

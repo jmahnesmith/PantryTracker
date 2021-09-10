@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using NutritionixLib.DataTunnel;
+using NutritionixLib.Models;
 using Xunit;
+using static NutritionixLib.Models.Foods;
 
 namespace NutritionixLib.Tests
 {
@@ -12,13 +14,13 @@ namespace NutritionixLib.Tests
         [Fact]
         public async Task GetFood_ReturnDietPepsiAsync()
         {
-            var expected = "Diet Cola";
+            string expected = "Diet Cola";
 
-            var foodDataTunnel = new FoodDataTunnel();
+            FoodDataTunnel foodDataTunnel = new FoodDataTunnel();
 
-            var actual = await foodDataTunnel.GetFood("012000171741");
+            Food actual = await foodDataTunnel.GetFood("012000171741");
 
-            var actualName = actual.foods[0].food_name;
+            string actualName = actual.food_name;
 
             Assert.Equal(expected, actualName);
         }
