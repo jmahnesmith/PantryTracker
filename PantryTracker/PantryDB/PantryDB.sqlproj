@@ -56,11 +56,18 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-  </ItemGroup>
-  <ItemGroup>
-    <Build Include="Foods.sql" />
+    <Folder Include="Stored Procedures" />
+    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="PantryDB.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Foods.sql" />
+    <Build Include="Stored Procedures\Foods_AddFood.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PantryDB.publish.xml" />
+    <None Include="Snapshots\PantryDB_20210914_14-05-59.dacpac" />
   </ItemGroup>
 </Project>

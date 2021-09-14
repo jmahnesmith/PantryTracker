@@ -44,7 +44,7 @@ namespace PantryDBLibrary.Models
             this.sugars = nf_sugars;
             this.protien = nf_protein;
             this.potassium = nf_potassium;
-
+            this.tags = tags;
             this.photo = thumb;
         }
     }
