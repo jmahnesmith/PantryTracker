@@ -2,13 +2,22 @@
 using PantryDBLibrary.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Data;
+using Microsoft.Data.SqlClient;
+using Dapper;
+using System.Threading.Tasks;
 
 namespace PantryDBLibrary.DataTunnel
 {
     public class PantryDataTunnel
     {
-        public void AddFood(Foods.Food food)
+        public string ConnectionString { get; private set; }
+        public PantryDataTunnel(string connectionString)
+        {
+            this.ConnectionString = connectionString;
+        }
+
+        public async Task AddFoodAsync(Foods.Food food)
         {
             Food newFood = new Food(
                 food.upc,
@@ -30,7 +39,34 @@ namespace PantryDBLibrary.DataTunnel
                 food.tags.ToString(),
                 food.photo.thumb);
 
+            string sql = "[Foods_AddFood]";
 
+            using (IDbConnection connection = new SqlConnection(ConnectionString))
+            {
+                var parameters = new
+                {
+                    upc = newFood.upc,
+                    food_name = newFood.food_name,
+                    brand_name = newFood.brand_name,
+                    serving_qty = newFood.serving_qty,
+                    serving_unit = newFood.serving_unit,
+                    serving_weight_grams = newFood.serving_weight_grams,
+                    calories = newFood.calories,
+                    total_fat = newFood.total_fat,
+                    saturated_fat = newFood.saturated_fat,
+                    cholesterol = newFood.cholesterol,
+                    sodium = newFood.sodium,
+                    total_carbohydrate = newFood.total_carbohydrate,
+                    dietary_fiber = newFood.dietary_fiber,
+                    sugars = newFood.sugars,
+                    protien = newFood.protien,
+                    potassium = newFood.potassium,
+                    tags = newFood.tags,
+                    photo = newFood.photo
+                };
+
+                await connection.ExecuteAsync(sql, parameters, commandType: CommandType.StoredProcedure).ConfigureAwait(false);
+            }
         }
     }
 }
