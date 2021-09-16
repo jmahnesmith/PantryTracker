@@ -68,6 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PantryDB.publish.xml" />
-    <None Include="Snapshots\PantryDB_20210914_14-05-59.dacpac" />
+    <None Include="Snapshots\PantryDB_20210916_13-22-40.dacpac" />
   </ItemGroup>
 </Project>

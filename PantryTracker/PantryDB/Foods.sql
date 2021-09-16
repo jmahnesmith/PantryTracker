@@ -17,5 +17,6 @@
     [protien] INT NULL, 
     [potassium] INT NULL, 
     [tags] NVARCHAR(50) NULL, 
-    [photo] NVARCHAR(50) NULL 
+    [photo] NVARCHAR(50) NULL, 
+    [amount] INT NULL DEFAULT 1 
 )

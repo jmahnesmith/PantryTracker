@@ -24,6 +24,7 @@ namespace PantryDBLibrary.Models
         public int? potassium;
         public string? tags;
         public string? photo;
+        public int amount;
 
 
         public Food(int upc, string? food_name, string? brand_name, int? serving_qty, string? serving_unit, int? serving_weight_grams, int? nf_calories, int? nf_total_fat, int? nf_saturated_fat, int? nf_cholesterol, int? nf_sodium, int? nf_total_carbohydrate, int? nf_dietary_fiber, int? nf_sugars, int? nf_protein, int? nf_potassium, string? tags, string? thumb)

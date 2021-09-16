@@ -46,6 +46,8 @@ namespace NutritionixLib.Models
             public object? tag_id { get; set; }
             public DateTime? updated_at { get; set; }
             public string? nf_ingredient_statement { get; set; }
+
+
         }
 
         public class Metadata
